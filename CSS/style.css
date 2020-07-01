@@ -132,6 +132,7 @@ a {
 
 .icon-tell {
   display: inline-block;
+  align-items: baseline;
   width: 10px;
   height: 15px;
   margin-right: 10px;
@@ -364,7 +365,8 @@ p {
   height: 20px;
 }
 
-.social:hover {
+.social:hover,
+.social:focus {
   background: var(--accent-color);
   --color3: var(--primary-white-color);
 }
@@ -386,7 +388,8 @@ p {
   margin-left: 30px;
 }
 
-.clients a:hover {
+.clients a:hover,
+.clients a:focus {
   border: 2px solid var(--accent-color);
   --color3: var(--accent-color);
   cursor: pointer;
@@ -538,7 +541,8 @@ form {
   box-sizing: border-box;
 }
 
-.card-item:hover {
+.card-item:hover,
+.card-item:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -578,7 +582,8 @@ form {
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-item:hover .description {
+.card-item:hover .description,
+.card-item:focus .description {
   opacity: 1;
   transform: translatey(0);
 }
