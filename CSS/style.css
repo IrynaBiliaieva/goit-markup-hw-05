@@ -107,6 +107,7 @@ a {
 .link:focus,
 .link:active {
   color: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav a {
@@ -121,6 +122,7 @@ a {
 .contact-nav .link:active {
   color: var(--accent-color);
   --color4: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-email {
   display: inline-block;
@@ -205,6 +207,7 @@ button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   border-color: 1px solid var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .feature-list {
   display: flex;
@@ -369,6 +372,7 @@ p {
 .social:focus {
   background: var(--accent-color);
   --color3: var(--primary-white-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
@@ -393,6 +397,7 @@ p {
   border: 2px solid var(--accent-color);
   --color3: var(--accent-color);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 footer {
   background-color: #2f303a;
@@ -524,8 +529,9 @@ form {
   text-decoration: none;
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 20px;
 }
-*/ .card-list .link {
+.card-list .link {
   max-width: 100%;
   height: auto;
 }
@@ -541,11 +547,6 @@ form {
   box-sizing: border-box;
 }
 
-.card-item:hover,
-.card-item:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-}
 .card-item:nth-child(3n) {
   margin-right: 0px;
 }
@@ -586,4 +587,12 @@ form {
 .card-item:focus .description {
   opacity: 1;
   transform: translatey(0);
+}
+
+.card-list a:hover,
+.card-list a:focus {
+  display: block;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
 }
